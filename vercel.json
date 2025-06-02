@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd praise-main && npm install && npm run build",
+  "outputDirectory": "praise-main/.next",
+  "framework": "nextjs",
+  "installCommand": "cd praise-main && npm install"
+} 
