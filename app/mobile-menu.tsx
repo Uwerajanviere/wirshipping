@@ -57,9 +57,13 @@ export function MobileMenu() {
             <Link href="/#listen-section" onClick={() => setOpen(false)}>
               <Button className="w-full bg-white text-blue-900 hover:bg-white/90">Listen Live</Button>
             </Link>
-            <Link href="/support" onClick={() => setOpen(false)}>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Give Now</Button>
-            </Link>
+            <form action="https://www.paypal.com/donate" method="post" target="_top" className="w-full">
+              <input type="hidden" name="hosted_button_id" value="Z4UPJDXNDFCQJ" />
+              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white" onClick={() => setOpen(false)}>
+                Give Now
+              </Button>
+              <img alt="" src="https://www.paypal.com/en_RW/i/scr/pixel.gif" width="1" height="1" style={{ display: 'none' }} />
+            </form>
           </div>
         </div>
       </SheetContent>

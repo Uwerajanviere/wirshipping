@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram } from "lucide-react"
+import { Facebook, Instagram, Heart, Youtube } from "lucide-react"
 
 export function Footer() {
   return (
@@ -32,6 +32,22 @@ export function Footer() {
             </Link>
           </div>
 
+          {/* Donate Button - Mobile */}
+          <div className="flex justify-center mb-6 md:hidden">
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="Z4UPJDXNDFCQJ" />
+              <input 
+                type="image" 
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+                name="submit" 
+                title="PayPal - The safer, easier way to pay online!" 
+                alt="Donate with PayPal button"
+                className="h-10" 
+              />
+              <img alt="" src="https://www.paypal.com/en_RW/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </div>
+
           {/* Social Media */}
           <div className="flex justify-center gap-4 mb-10">
             <a
@@ -51,6 +67,15 @@ export function Footer() {
             >
               <Instagram className="h-6 w-6 text-blue-600" />
               <span className="sr-only">Instagram</span>
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-full p-3 hover:opacity-90 transition"
+            >
+              <Youtube className="h-6 w-6 text-blue-600" />
+              <span className="sr-only">YouTube</span>
             </a>
           </div>
 
