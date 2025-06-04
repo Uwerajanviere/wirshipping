@@ -24,13 +24,13 @@ export function MobileMenu() {
             </Button>
           </div>
           <nav className="flex flex-col p-4 gap-4">
-            <a
-              href="#listen-section"
+            <Link
+              href="/#listen-section"
               className="text-white text-lg py-2 hover:text-white/80 transition"
               onClick={() => setOpen(false)}
             >
               Listen
-            </a>
+            </Link>
             <Link
               href="/about"
               className="text-white text-lg py-2 hover:text-white/80 transition"
@@ -44,13 +44,6 @@ export function MobileMenu() {
               onClick={() => setOpen(false)}
             >
               Contact Us
-            </Link>
-            <Link
-              href="/support"
-              className="text-white text-lg py-2 hover:text-white/80 transition"
-              onClick={() => setOpen(false)}
-            >
-              Support Us
             </Link>
           </nav>
           <div className="mt-auto p-4 flex flex-col gap-4">
