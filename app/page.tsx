@@ -59,40 +59,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      {/* Audio Player */}
-      <div className="fixed bottom-0 left-0 right-0 bg-black/80 backdrop-blur-md p-4 border-t border-white/10 z-20">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="h-12 w-12 relative rounded overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=48&width=48&text=Now Playing"
-                alt="Now playing"
-                width={48}
-                height={48}
-                className="object-cover"
-              />
-            </div>
-            <div>
-              <h4 className="text-white font-medium">Amazing Grace</h4>
-              <p className="text-white/70 text-sm">Worship Artist</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="text-white">
-              <Play className="h-5 w-5" />
-            </Button>
-          </div>
-
-          <div className="hidden md:flex items-center gap-2">
-            <Volume2 className="h-5 w-5 text-white/70" />
-            <div className="w-24 h-1 bg-white/30 rounded-full">
-              <div className="w-1/2 h-full bg-white rounded-full"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
