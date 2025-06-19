@@ -83,7 +83,7 @@ export function Footer() {
           <div className="text-center text-white/80 text-sm px-4">
             <p>
               © {new Date().getFullYear()} Atlantic Gateway Communications, Inc. Atlantic Gateway Communications, Inc.
-              serves and ministers to people globally through its ministries – WGTS 91.9, WGBZ 88.3, Worship, Hymns &
+              serves and ministers to people globally through its ministries – Giramahoro, Worship, Hymns &
               Favorites.
             </p>
           </div>
