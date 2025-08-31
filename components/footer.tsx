@@ -83,8 +83,9 @@ export function Footer() {
           <div className="text-center text-white/80 text-sm px-4">
             <p>
               © {new Date().getFullYear()} Atlantic Gateway Communications, Inc. Atlantic Gateway Communications, Inc.
-              serves and ministers to people globally through its ministries – Giramahoro, Worship, Hymns &
-              Favorites.
+            </p>
+            <p>
+              Giramahoro cloudine
             </p>
           </div>
         </div>
